@@ -1,6 +1,5 @@
 export class Doller {
-    amount: number;
-    constructor(amount: number) {
+    constructor(public amount: number) {
         this.amount = amount;
     }
 }
