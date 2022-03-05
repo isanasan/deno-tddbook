@@ -11,4 +11,5 @@ Deno.test("Multiplication", () => {
 
 Deno.test("equals", () => {
     assertEquals(true,new Doller(5).equals(new Doller(5)));
+    assertEquals(false,new Doller(5).equals(new Doller(6)));
 })
