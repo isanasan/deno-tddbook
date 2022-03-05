@@ -8,3 +8,7 @@ Deno.test("Multiplication", () => {
     const product2: Doller = five.times(3);
     assertEquals(6, product2.amount);
 })
+
+Deno.test("equals", () => {
+    assertEquals(true,new Doller(5).equals(new Doller(5)));
+})
