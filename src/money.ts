@@ -9,6 +9,6 @@ export class Doller {
     }
     
     equals (object: Doller):boolean {
-        return true;
+        return this.amount === object.amount;
     }
 }
