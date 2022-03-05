@@ -3,8 +3,9 @@ export class Doller {
             this.amount = amount;
     }
     
-    times (multiplier: number) :void
+    times (multiplier: number)
     {
         this.amount *= multiplier;
+        return null;
     }
 }
