@@ -1,6 +1,6 @@
 export class Doller {
-    constructor(public amount: number) {
-        this.amount = amount;
+    public amount: number = 10;
+    constructor(amount: number) {
     }
     
     times (multiplier: number) :void
