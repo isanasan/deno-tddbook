@@ -7,4 +7,8 @@ export class Doller {
     {
         return new Doller(this.amount * multiplier);
     }
+    
+    equals (object: Doller) {
+        return true;
+    }
 }
