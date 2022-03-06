@@ -11,3 +11,9 @@ Deno.test("equals", () => {
     assertEquals(true,new Doller(5).equals(new Doller(5)));
     assertEquals(false,new Doller(5).equals(new Doller(6)));
 })
+
+Deno.test("FrancMultiplication", () => {
+    const five: Franc = new Franc(2);
+    assertEquals(new Franc(10), five.times(5));
+    assertEquals(new Franc(6), five.times(3));
+})
