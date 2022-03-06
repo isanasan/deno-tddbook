@@ -19,6 +19,7 @@ Deno.test("Currency", () => {
 });
 
 Deno.test("SimpleAdditation", () => {
+  const bank: Bank = new Bank();
   const reduce: Money = bank.reduce(sum, "USD");
   assertEquals(Money.doller(10), reduce);
 });
