@@ -13,12 +13,6 @@ Deno.test("equals", () => {
   assertEquals(false, Money.franc(5).equals(Money.doller(5)));
 });
 
-Deno.test("FrancMultiplication", () => {
-  const five: Money = Money.franc(2);
-  assertEquals(Money.franc(10), five.times(5));
-  assertEquals(Money.franc(6), five.times(3));
-});
-
 Deno.test("Currency", () => {
   assertEquals("USD", Money.doller(1).getCurrency());
   assertEquals("CHF", Money.franc(1).getCurrency());
