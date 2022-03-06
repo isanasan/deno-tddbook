@@ -1,3 +1,5 @@
+class Money {
+}
 export class Doller {
     constructor(private amount: number) {
             this.amount = amount;
