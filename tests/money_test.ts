@@ -22,6 +22,6 @@ Deno.test("FrancMultiplication", () => {
 });
 
 Deno.test("Currency", () => {
-  assertEquals("USD", Money.doller(1).currency());
-  assertEquals("CHF", Money.franc(1).currency());
+  assertEquals("USD", Money.doller(1).getCurrency());
+  assertEquals("CHF", Money.franc(1).getCurrency());
 });
