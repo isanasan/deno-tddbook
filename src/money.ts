@@ -5,6 +5,10 @@ export class Money {
         return this.amount === money.amount
         && this.constructor.name === money.constructor.name;
     }
+    
+    static doller(amount:number):Doller {
+        return new Doller(amount);
+    }
 }
 export class Doller extends Money{
     constructor(amount: number) {
