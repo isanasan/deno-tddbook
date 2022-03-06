@@ -1,5 +1,6 @@
 import { assertEquals } from "https://deno.land/std@0.128.0/testing/asserts.ts";
 import { Money } from "../src/money.ts";
+import { Expression } from "../src/expression.ts";
 
 Deno.test("Multiplication", () => {
   const five: Money = Money.doller(2);
