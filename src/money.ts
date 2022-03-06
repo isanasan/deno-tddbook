@@ -26,6 +26,11 @@ export class Doller extends Money{
     {
         return new Doller(this.amount * multiplier);
     }
+    
+    currency():string
+    {
+        return "USD";
+    }
 }
     
 export class Franc extends Money{
