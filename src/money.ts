@@ -1,5 +1,5 @@
 class Money {
-    protected amount: number;
+    protected amount: number = 0;
 }
 export class Doller extends Money{
     constructor(amount: number) {
