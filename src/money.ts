@@ -28,7 +28,7 @@ export class Franc extends Money{
         return new Franc(this.amount * multiplier);
     }
     
-    equals (object: Franc):boolean {
+    equals (object: Money):boolean {
         return this.amount === object.amount;
     }
 }
