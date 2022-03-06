@@ -13,6 +13,7 @@ Deno.test("equals", () => {
     assertEquals(false,new Doller(5).equals(new Doller(6)));
     assertEquals(true,new Franc(5).equals(new Franc(5)));
     assertEquals(false,new Franc(5).equals(new Franc(6)));
+    assertEquals(false,new Franc(5).equals(new Doller(5)));
 })
 
 Deno.test("FrancMultiplication", () => {
