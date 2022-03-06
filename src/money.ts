@@ -12,7 +12,7 @@ export abstract class Money {
   }
 
   static doller(amount: number): Money {
-    return new Doller(amount);
+    return new Doller(amount, "USD");
   }
 
   static franc(amount: number): Money {
@@ -20,14 +20,14 @@ export abstract class Money {
   }
 }
 export class Doller extends Money {
-  constructor(amount: number) {
+  constructor(amount: number, currency: string) {
     super();
     this.amount = amount;
-    this.currency = "USD";
+    this.currency = currency;
   }
 
   times(multiplier: number): Money {
-    return new Doller(this.amount * multiplier);
+    return Money.doller(this.amount * multiplier);
   }
 }
 
