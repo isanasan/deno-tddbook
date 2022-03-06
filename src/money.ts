@@ -27,12 +27,12 @@ export abstract class Money {
 }
 export class Doller extends Money {
   times(multiplier: number): Money {
-    return new Doller(this.amount * multiplier, this.currency);
+    return new Money(this.amount * multiplier, this.currency);
   }
 }
 
 export class Franc extends Money {
   times(multiplier: number): Money {
-    return new Franc(this.amount * multiplier, this.currency);
+    return new Money(this.amount * multiplier, this.currency);
   }
 }
