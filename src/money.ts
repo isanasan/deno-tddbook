@@ -7,7 +7,7 @@ export abstract class Money {
         && this.constructor.name === money.constructor.name;
     }
     
-    static doller(amount:number):Doller {
+    static doller(amount:number):Money {
         return new Doller(amount);
     }
 }
