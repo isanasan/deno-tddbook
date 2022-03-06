@@ -2,6 +2,7 @@ class Money {
 }
 export class Doller extends Money{
     constructor(private amount: number) {
+            super();
             this.amount = amount;
     }
     
