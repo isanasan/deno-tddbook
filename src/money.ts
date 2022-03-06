@@ -1,5 +1,5 @@
 class Money {
-    public amount: number = 0;
+    protected amount: number = 0;
     
     equals (money: Money):boolean {
         return this.amount === money.amount;
