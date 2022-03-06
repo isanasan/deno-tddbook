@@ -19,6 +19,7 @@ export class Doller extends Money{
     
 export class Franc extends Money{
     constructor(private amount: number) {
+            super();
             this.amount = amount;
     }
     
