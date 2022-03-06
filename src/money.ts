@@ -12,8 +12,8 @@ export class Doller extends Money{
         return new Doller(this.amount * multiplier);
     }
     
-    equals (object: Doller):boolean {
-        return this.amount === object.amount;
+    equals (money: Money):boolean {
+        return this.amount === money.amount;
     }
 }
     
