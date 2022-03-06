@@ -1,5 +1,6 @@
 import { assertEquals } from "https://deno.land/std@0.128.0/testing/asserts.ts";
 import { Doller } from "../src/money.ts";
+import { Franc } from "../src/money.ts";
 
 Deno.test("Multiplication", () => {
     const five: Doller = new Doller(2);
