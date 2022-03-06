@@ -23,15 +23,13 @@ export class Money {
   static franc(amount: number): Money {
     return new Franc(amount, "CHF");
   }
-}
-export class Doller extends Money {
+
   times(multiplier: number): Money {
     return new Money(this.amount * multiplier, this.currency);
   }
+}
+export class Doller extends Money {
 }
 
 export class Franc extends Money {
-  times(multiplier: number): Money {
-    return new Money(this.amount * multiplier, this.currency);
-  }
 }
