@@ -17,7 +17,7 @@ export class Doller extends Money{
     }
 }
     
-export class Franc {
+export class Franc extends Money{
     constructor(private amount: number) {
             this.amount = amount;
     }
