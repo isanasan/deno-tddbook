@@ -1,4 +1,4 @@
-class Money {
+export class Money {
     protected amount: number = 0;
     
     equals (money: Money):boolean {
