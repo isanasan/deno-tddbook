@@ -1,5 +1,9 @@
 class Money {
     public amount: number = 0;
+    
+    equals (money: Money):boolean {
+        return this.amount === money.amount;
+    }
 }
 export class Doller extends Money{
     constructor(amount: number) {
@@ -10,10 +14,6 @@ export class Doller extends Money{
     times (multiplier: number)
     {
         return new Doller(this.amount * multiplier);
-    }
-    
-    equals (money: Money):boolean {
-        return this.amount === money.amount;
     }
 }
     
