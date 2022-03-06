@@ -1,7 +1,6 @@
-export abstract class Money {
+export class Money {
   protected amount: number = 0;
   protected currency: string = "";
-  abstract times(multiplier: number): Money;
 
   constructor(amount: number, currency: string) {
     this.amount = amount;
