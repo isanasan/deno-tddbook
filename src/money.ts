@@ -18,7 +18,7 @@ export abstract class Money {
   }
 
   static doller(amount: number): Money {
-    return new Money(amount, "USD");
+    return new Doller(amount, "USD");
   }
 
   static franc(amount: number): Money {
