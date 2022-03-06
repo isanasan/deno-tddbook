@@ -19,8 +19,8 @@ export class Doller extends Money{
     
 export class Franc extends Money{
     constructor(amount: number) {
-            super();
-            this.amount = amount;
+        super();
+        this.amount = amount;
     }
     
     times (multiplier: number)
