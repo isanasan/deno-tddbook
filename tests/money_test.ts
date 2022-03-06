@@ -20,3 +20,8 @@ Deno.test("FrancMultiplication", () => {
     assertEquals(Money.franc(10), five.times(5));
     assertEquals(Money.franc(6), five.times(3));
 })
+
+Deno.test("Currency",() => {
+    assertEquals("USD",Money.doller(1).currency());
+    assertEquals("CHF",Money.franc(1).currency());
+})
