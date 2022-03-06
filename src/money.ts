@@ -16,7 +16,7 @@ export abstract class Money {
   }
 
   static franc(amount: number): Money {
-    return new Franc(amount);
+    return new Franc(amount, "");
   }
 }
 export class Doller extends Money {
@@ -32,13 +32,13 @@ export class Doller extends Money {
 }
 
 export class Franc extends Money {
-  constructor(amount: number) {
+  constructor(amount: number, currency: string) {
     super();
     this.amount = amount;
     this.currency = "CHF";
   }
 
   times(multiplier: number): Money {
-    return new Franc(this.amount * multiplier);
+    return new Franc(this.amount * multiplier, "");
   }
 }
