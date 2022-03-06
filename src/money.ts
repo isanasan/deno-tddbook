@@ -2,7 +2,8 @@ class Money {
     protected amount: number = 0;
     
     equals (money: Money):boolean {
-        return this.amount === money.amount;
+        return this.amount === money.amount
+        && this.constructor.name === money.constructor.name;
     }
 }
 export class Doller extends Money{
