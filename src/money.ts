@@ -1,6 +1,7 @@
 export abstract class Money {
     protected amount: number = 0;
     abstract times(multiplier: number): Money;
+    abstract currency():string;
     
     equals (money: Money):boolean {
         return this.amount === money.amount
