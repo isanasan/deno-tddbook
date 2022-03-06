@@ -14,7 +14,7 @@ export abstract class Money {
 
   equals(money: Money): boolean {
     return this.amount === money.amount &&
-      this.constructor.name === money.constructor.name;
+      this.currency === money.currency;
   }
 
   static doller(amount: number): Money {
