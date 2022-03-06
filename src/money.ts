@@ -1,6 +1,6 @@
 class Money {
 }
-export class Doller {
+export class Doller extends Money{
     constructor(private amount: number) {
             this.amount = amount;
     }
