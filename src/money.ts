@@ -2,8 +2,8 @@ class Money {
 }
 export class Doller extends Money{
     constructor(private amount: number) {
-            super();
-            this.amount = amount;
+        super();
+        this.amount = amount;
     }
     
     times (multiplier: number)
