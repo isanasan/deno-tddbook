@@ -17,19 +17,14 @@ export class Money {
   }
 
   static doller(amount: number): Money {
-    return new Doller(amount, "USD");
+    return new Money(amount, "USD");
   }
 
   static franc(amount: number): Money {
-    return new Franc(amount, "CHF");
+    return new Money(amount, "CHF");
   }
 
   times(multiplier: number): Money {
     return new Money(this.amount * multiplier, this.currency);
   }
-}
-export class Doller extends Money {
-}
-
-export class Franc extends Money {
 }
