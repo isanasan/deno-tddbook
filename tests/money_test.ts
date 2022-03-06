@@ -10,8 +10,6 @@ Deno.test("Multiplication", () => {
 Deno.test("equals", () => {
   assertEquals(true, Money.doller(5).equals(Money.doller(5)));
   assertEquals(false, Money.doller(5).equals(Money.doller(6)));
-  assertEquals(true, Money.franc(5).equals(Money.franc(5)));
-  assertEquals(false, Money.franc(5).equals(Money.franc(6)));
   assertEquals(false, Money.franc(5).equals(Money.doller(5)));
 });
 
