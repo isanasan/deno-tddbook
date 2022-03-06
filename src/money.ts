@@ -10,6 +10,10 @@ export abstract class Money {
     static doller(amount:number):Money {
         return new Doller(amount);
     }
+    
+    static franc(amount:number):Money {
+        return new Franc(amount);
+    }
 }
 export class Doller extends Money{
     constructor(amount: number) {
