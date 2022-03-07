@@ -27,3 +27,10 @@ Deno.test("SimpleAdditation", () => {
   const reduce: Money = bank.reduce(sum, "USD");
   assertEquals(Money.doller(10), reduce);
 });
+
+Deno.test("PlusReturnsSum", () => {
+  const five: Money = Money.doller(5);
+  const sum: Sum = five.plus(five);
+  assertEquals(five, sum.augend);
+  assertEquals(five, sum.addend);
+});
