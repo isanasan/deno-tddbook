@@ -1,3 +1,4 @@
+import { Expression } from "./expression.ts";
 import { Sum } from "./sum.ts";
 export class Money {
   protected amount: number = 0;
@@ -29,7 +30,7 @@ export class Money {
     return new Money(this.amount * multiplier, this.currency);
   }
 
-  plus(money: Money): Money {
+  plus(money: Money): Expression {
     return new Sum(this, money);
   }
 }
