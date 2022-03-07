@@ -1,3 +1,4 @@
+import { Sum } from "./sum.ts";
 export class Money {
   protected amount: number = 0;
   protected currency: string = "";
@@ -29,6 +30,6 @@ export class Money {
   }
 
   plus(money: Money): Money {
-    return new Money(this.amount + money.amount, this.currency);
+    return new Sum(this, money);
   }
 }
